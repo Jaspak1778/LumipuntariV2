@@ -1,0 +1,15 @@
+.ridge {
+    border-style: ridge;
+}
+
+.inline {
+    display: inline;
+}
+html * {
+    font-family:Leelawadee UI !important
+}
+
+body {
+    background-image: url('https://th.bing.com/th/id/R.7c0a3899b0d94b18e49e445678c01a82?rik=otM1gJglyrEtsA&pid=ImgRaw&r=0');
+}
+
