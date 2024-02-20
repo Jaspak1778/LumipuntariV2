@@ -18,9 +18,6 @@
         <p>Putken koko ulkohalkaisija millimetreinä , esim 75mm sekä näyte grammoina. </p>
         <p>' Luo PDF ' painikkeesta saat PDF muotoisen raportin laitteellesi, jota voit käyttää jatko tarkoituksiin. </p>
    
-        
-        
-
         <p style="display: inline;">Lue myös&#160;&#160;</p><a href="https://www.ely-keskus.fi/documents/10191/57298/Lumipuntari/" target="_blank">ELY keskuksen ohjeet !</a>
         <br>
         <p>Palaute ja ideat on tervetulleita! --  > @ jani.pekkala@student.careeria.fi </p>
@@ -46,7 +43,7 @@
     <div style="margin-left: 60px;">
         <button type="button" onclick="nayte()">Laske</button>
         &#160;&#160;&#160;&#160;&#160;&#160;
-        <button type="button" id="button" >Luo PDF tuloksista</button>
+        <button type="button" onclick="pdf()" >Luo PDF tuloksista</button>
     </div></div><br>
     <div class="container" style="margin-left: 60px;" class="card" id="makepdf">
         <h3 class="inline">Lumi kuormat:</h3>&#160;&#160;<h3 class="inline"  id="demo"></h3>
@@ -86,15 +83,16 @@
 
             let button = document.getElementById("button");
             let makepdf = document.getElementById("makepdf");
-     
-            button.addEventListener("click", function () {
-                html2pdf().from(makepdf).save();
-            });
         }
+        function pdf() {
+     
+            html2pdf().from(makepdf).save();
+            }
         
     </script>
 </body>
 <p style="margin-left: 60px;">Copyright : Jani Pekkala 2024. v.1.0.0</p>
 <p style="margin-left: 60px;">Educational-Non profitable use only</p>
 </html>
+
 
