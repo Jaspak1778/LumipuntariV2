@@ -85,13 +85,16 @@
             let makepdf = document.getElementById("makepdf");
         }
         function pdf() {
-     
-            html2pdf().from(makepdf).save();
+            let filename = prompt("Anna tiedostolle nimi:");
+            if (filename) {
+                html2pdf().from(makepdf).save(filename);
+            } else {
+                alert("Et antanut tiedoston nimeä. Nimeä tiedosto kiitos.");
             }
-        
+        }
     </script>
 </body>
-<p style="margin-left: 60px;">Copyright : Jani Pekkala 2024. v.1.0.0</p>
+<p style="margin-left: 60px;">Copyright : Jani Pekkala 2024. v.1.1.2<a href="changelog.html"> Versiohistoria </a></p>
 <p style="margin-left: 60px;">Educational-Non profitable use only</p>
 </html>
 
